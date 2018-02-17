@@ -1,24 +1,25 @@
 {
-	"name": "clashboard",
-	"version": "0.0.1",
-	"description": "A Dashboard for Clan Route 66",
-	"main": "index.js",
-	"scripts": {
-		"start": "node server index.js",
-		"dev": "nodemon server index.js",
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/kevmcgovern/ClashBoard",
-	},
-	"author": "Kevin McGovern",
-	"license": "ISC",
-	"homepage": "https://github.com/kevmcgovern/ClashBoard",
-	"dependencies": {
-		"body-parser": "^1.18.2",
-		"connect-mongo": "^2.0.1",
-		"express": "^4.16.2",
-		"express-session": "^1.15.6",
-		"mongoose": "^5.0.2"
-	}
+  "name": "clashboard",
+  "version": "0.0.1",
+  "description": "A Dashboard for Clan Route 66",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server index.js",
+    "dev": "nodemon server index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevmcgovern/ClashBoard"
+  },
+  "author": "Kevin McGovern",
+  "license": "ISC",
+  "homepage": "https://github.com/kevmcgovern/ClashBoard",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.1",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.0.2",
+    "webpack": "^3.11.0"
+  }
 }
