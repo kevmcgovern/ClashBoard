@@ -18,6 +18,8 @@ const clanSchema = new Schema({
 
 const Clan = mongoose.model("Clan", clanSchema);
 
+mongoose.connect("mongodb://localhost/clan")
+
 var getClan = (callback) => {
 	Clan.find({}, function(err, doc) {
 		if (err) {
@@ -33,6 +35,7 @@ var getClan = (callback) => {
 };
 
 var saveClan = (items) => {
+	console.log('Inside saveClan')
 	items.forEach(function(item) {
     var clanMember = new Clan({
     	tag: item.tag,
@@ -52,3 +55,6 @@ var saveClan = (items) => {
     clanMember.save().then(() => console.log(`${clanMember.name} has been saved to the dataBase`));
 	});
 };
+
+
+module.exports = { saveClan };
