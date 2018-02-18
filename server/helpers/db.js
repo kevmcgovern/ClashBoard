@@ -29,9 +29,10 @@ var getClan = (callback) => {
 		} else {
 			var output = {};
 			// for var
-			console.log(doc);
+			// console.log(doc);
+      callback.send(doc);
 		}
-	})
+	});
 };
 
 var saveClan = (items) => {
@@ -57,4 +58,4 @@ var saveClan = (items) => {
 };
 
 
-module.exports = { saveClan };
+module.exports = { saveClan, getClan };
